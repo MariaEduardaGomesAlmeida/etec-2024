@@ -1,6 +1,7 @@
 // Fazer um algoritmo que leia 3 notas de um aluno, calcular a media dele e ao final dizer 
 //se esse aluno foi reprovado ou aprovado.
 import inquirer from "inquirer";
+import chalk from "chalk";
 
 function Calculamedia(a, b, c){
     return (a+b+c)/3
@@ -27,7 +28,7 @@ inquirer
 ])
 .then((resposta) =>{
     let media = Calculamedia(resposta.n1, resposta.n2, resposta.n3);
-    console.log(`A média do aluno é: ${media.toFixed(2)}`);
+    console.log(chalk.blue`A média do aluno é: ${media.toFixed(2)}`);
 
 if(media<=5){
     console.log("Aluno reprovado!");
