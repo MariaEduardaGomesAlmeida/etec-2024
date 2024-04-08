@@ -4,6 +4,7 @@ public class FilmeMain {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		
+		
 		Filme filme1 = new Filme();
 
 		filme1.setTitulo("Os Vingadores");
@@ -18,6 +19,8 @@ public class FilmeMain {
 		filme2.setDuracaoEmMinutos(90);
 		System.out.println(filme2.exibirDuracaoEmHoras());
 		System.out.println();
+		System.out.println("OS FILMES EM CARTAZ SÃO: "+filme1.getTitulo()+" E  "+filme2.getTitulo());
+		System.out.println("---\n");
 		
 		
 		
