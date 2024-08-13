@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/pag.css">
+    <title>Extensão nova</title>
+</head>
+<body>
+
+{{>header}}
+
+
+
+<!-- main -->
+<main>
+   
+    
+
+
+    <div id="secao" class="sec">
+        
+        <h2>{{>titulo}}</h2>
+        <p>{{>conteudo}}
+             <br><br></p>
+
+        <img src="{{imagem}}" alt="" height="400px" width="600px">
+
+        <p>
+            {{>segundoParagrafo}}
+            </p>
+<br><br>
+            <div class="article-info">
+                <div class="author-info">
+                    <img src="{{>segundaImagem}}" alt="Foto do Autor" class="author-photo">
+                    <p class="author-name">Paula Silva</p>
+                </div>
+                <p class="publish-date">Data de Publicação: 3 de junho de 2024</p>
+            </div>
+        </div>
+</main>
+
+
+
+
+
+
+{{>footer}}
+
+</body>
+</html>
+
+
+
+<script>
+    //menu responsivo
+function openNav() {
+    document.getElementById("myNav").style.width = "100%";
+  }
+  
+  function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+  }
+
+
+</script>
