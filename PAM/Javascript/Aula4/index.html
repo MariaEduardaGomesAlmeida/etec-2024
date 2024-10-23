@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Forma geometrica</title>
+</head>
+<body>
+    <div class="formulario">
+        <h1>Calculo de fórmulas</h1>
+        <form action="/enviar" method="post" id="formaForm">
+            <label for="numLados">Quantos lados tem a figura?</label><br>
+            <input type="text" id="numLados" name="numLados" required><br><br>
+            <input id="btn" type="submit" value="Enviar"><br><br><br>
+            <div id="resultado"></div>
+            <div id="resImagem" type="image"></div>
+        </form> 
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
